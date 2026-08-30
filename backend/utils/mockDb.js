@@ -64,8 +64,65 @@ const saveDB = () => {
     }
 };
 
+const ensureDefaultUsers = () => {
+    const defaultUsers = [
+        {
+            _id: 'demo-patient-user-id',
+            name: 'Demo Patient',
+            email: 'demo.patient@medix.com',
+            password: 'password123',
+            role: 'patient',
+            pulseId: 'PULSE-DEMO',
+            dateOfBirth: new Date('1995-06-15'),
+            gender: 'Other',
+            bloodGroup: 'O+',
+            emergencyContact: {
+                name: 'Demo Emergency Contact',
+                relationship: 'Friend',
+                phone: '+91-9999999999',
+            },
+            createdAt: new Date(),
+        },
+        {
+            _id: 'admin-user-id',
+            name: 'Admin User',
+            email: 'admin@medix.com',
+            password: 'password123',
+            role: 'admin',
+            pulseId: 'PULSE-ADMIN',
+            dateOfBirth: new Date('1980-01-01'),
+            gender: 'Other',
+            bloodGroup: 'O+',
+            emergencyContact: { name: 'Admin HQ', phone: '000-000-0000' },
+            createdAt: new Date(),
+        },
+        {
+            _id: 'hospital-user-id',
+            name: 'City Hospital',
+            email: 'hospital@medix.com',
+            password: 'password123',
+            role: 'doctor',
+            pulseId: 'PULSE-HOSPITAL',
+            dateOfBirth: new Date('1990-01-01'),
+            gender: 'Other',
+            bloodGroup: 'O+',
+            emergencyContact: { name: 'Hospital Admin', phone: '111-111-1111' },
+            createdAt: new Date(),
+        }
+    ];
+
+    const existingEmails = new Set(storage.users.map(u => u.email));
+    for (const user of defaultUsers) {
+        if (!existingEmails.has(user.email)) {
+            storage.users.push(user);
+        }
+    }
+    saveDB();
+};
+
 // Initial load
 loadDB();
+ensureDefaultUsers();
 
 /**
  * Creates a mock document with Mongoose-like methods
