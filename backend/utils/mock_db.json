@@ -1,0 +1,40 @@
+{
+  "users": [
+    {
+      "_id": "admin-user-id",
+      "name": "Admin User",
+      "email": "admin@medix.com",
+      "password": "password123",
+      "role": "admin",
+      "pulseId": "PULSE-ADMIN",
+      "dateOfBirth": "1980-01-01T00:00:00.000Z",
+      "gender": "Other",
+      "bloodGroup": "O+",
+      "emergencyContact": {
+        "name": "Admin HQ",
+        "phone": "000-000-0000"
+      },
+      "createdAt": "2026-01-01T00:00:00.000Z",
+      "qrCodeUrl": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAASwAAAEsCAYAAAB5fY51AAAAAklEQVR4AewaftIAAAeOSURBVO3BgW0DRxAEwZ4F8095rATsI+DD41fqqvQHkrTAIElLDJK0xCBJSwyStMQgSUsMkrTEIElLDJK0xCBJSwyStMQgSUsMkrTEIElLDJK0xCBJSwyStMQgSUsMkrTEh4uS8Fe15W2ScNKWG5Jw0paTJNzQlpMk3NKWkyT8VW25YZCkJQZJWmKQpCUGSVpikKQlBklaYpCkJQZJWuLDw9qyTRJuSMI32nJDW57SljdJwklbvpGEp7RlmyQ8ZZCkJQZJWmKQpCUGSVpikKQlBklaYpCkJQZJWuLDCyXhKW15myTc0JaTJJy05SQJJ205actTkrBREp7SljcZJGmJQZKWGCRpiUGSlhgkaYlBkpYYJGmJQZKW+KDXacsNSXiTJDylLSdt0S6DJC0xSNISgyQtMUjSEoMkLTFI0hKDJC0xSNISH7RSEn6jttyQhJO2aJdBkpYYJGmJQZKWGCRpiUGSlhgkaYlBkpYYJGmJDy/Ulr8sCW+ShDdJwl/Wlr9qkKQlBklaYpCkJQZJWmKQpCUGSVpikKQlBkla4sPDkqD/1paTJJy05SQJJ205ScJJW06ScNKWkyTckoSTttyQBP27QZKWGCRpiUGSlhgkaYlBkpYYJGmJQZKWGCRpifQH+pWScNKWkySctOUpSThpi36fQZKWGCRpiUGSlhgkaYlBkpYYJGmJQZKWGCRpiQ8vlISTttyQhI3actKWkyTckIRtkvCktpwkYZu2PGWQpCUGSVpikKQlBklaYpCkJQZJWmKQpCUGSVpikKQl0h8slIQb2nJDEp7UljdJwg1tOUnCSVtuScJJW56ShJO2PCUJJ225YZCkJQZJWmKQpCUGSVpikKQlBklaYpCkJQZJWuLDRUm4oS03tOWGJJy05UlJeJO2nCThJAknbXmbJJy05SQJJ235qwZJWmKQpCUGSVpikKQlBklaYpCkJQZJWmKQpCU+LNWWG5Jw0paTJDypLTck4aQtN7TlKUn4y5LwlLY8ZZCkJQZJWmKQpCUGSVpikKQlBklaYpCkJQZJWuLDRW25IQknbTlJwg1J2CgJ2yThhrbckoSTtpwk4U3ackMSTtpywyBJSwyStMQgSUsMkrTEIElLDJK0xCBJSwyStMSHi5LwlCTc0JanJOEbbbmhLSdJeJO23JCEW9ryGyVhm0GSlhgkaYlBkpYYJGmJQZKWGCRpiUGSlhgkaYkPF7XlKUk4acsNSXibJJy05U2S8JS2nCThG0n4jdpyQxKeMkjSEoMkLTFI0hKDJC0xSNISgyQtMUjSEoMkLfHhoiTc0JaTtpwk4Ya2nCThpC23tOWGtpwk4aQtN7TlJAk3tOUbSThpy0kStknCmwyStMQgSUsMkrTEIElLDJK0xCBJSwyStMQgSUt8eFhbTpJw0paTttyQBP1/bTlJwklbbkjCN9pykoQb2rJNW54ySNISgyQtMUjSEoMkLTFI0hKDJC0xSNISgyQtkf7gQUk4actJEp7SlhuS8I22nCThpC03JOGkLSdJeJO2vE0SbmjLSRKe0pYbBklaYpCkJQZJWmKQpCUGSVpikKQlBklaYpCkJT5clIQbknBDW06ScJKEJyXhKUk4acs2bTlJwjfa8pS2nCThhrbckISnDJK0xCBJSwyStMQgSUsMkrTEIElLDJK0xCBJS6Q/eJkknLTlhiSctOWGJLxNW25IwlPaslESbmjLDUm4oS1PGSRpiUGSlhgkaYlBkpYYJGmJQZKWGCRpiUGSlhgkaYkPFyXhKUm4oS0nSbihLd9Iwpsk4Ya2nCThhiT8Vkk4actvNEjSEoMkLTFI0hKDJC0xSNISgyQtMUjSEoMkLZH+QI9IwkZteUoSTtrypCSctOUpSbihLTck4aQtNwyStMQgSUsMkrTEIElLDJK0xCBJSwyStMQgSUt8uCgJf1VbbmnLDUm4IQlvkoSTtrxNEk7a8pQk3NCWpwyStMQgSUsMkrTEIElLDJK0xCBJSwyStMQgSUt8eFhbtknCRm15kySctOUkCTck4UlteZO2bDNI0hKDJC0xSNISgyQtMUjSEoMkLTFI0hKDJC3x4YWS8JS2PKUtGyXhpC1PactJEp6UhN8oCSdtecogSUsMkrTEIElLDJK0xCBJSwyStMQgSUsMkrTEB71OEm5oy0kSbkjCSVtOknDSlpO2nCThG205ScJJW25Iwg1JOGnLmwyStMQgSUsMkrTEIElLDJK0xCBJSwyStMQgSUt80GOS8I22nCThhracJOGkLU9Jwg1t+UYStmnLDUm4oS03DJK0xCBJSwyStMQgSUsMkrTEIElLDJK0xCBJS3x4obb8Rm35RhJO2nKShDdJwklbTpLwpLacJOEkCTe05YYknLTlTQZJWmKQpCUGSVpikKQlBklaYpCkJQZJWmKQpCU+PCwJ+v+ScNKWN2nLSRJuaMvbtOWGJNzQlhuScNKWGwZJWmKQpCUGSVpikKQlBklaYpCkJQZJWmKQpCXSH0jSAoMkLTFI0hKDJC0xSNISgyQtMUjSEoMkLTFI0hKDJC0xSNISgyQtMUjSEoMkLTFI0hKDJC0xSNISgyQt8Q/T2QecLpguqQAAAABJRU5ErkJggg=="
+    },
+    {
+      "_id": "hospital-user-id",
+      "name": "City Hospital",
+      "email": "hospital@medix.com",
+      "password": "password123",
+      "role": "doctor",
+      "pulseId": "PULSE-HOSPITAL",
+      "dateOfBirth": "1990-01-01T00:00:00.000Z",
+      "gender": "Other",
+      "bloodGroup": "O+",
+      "emergencyContact": {
+        "name": "Hospital Admin",
+        "phone": "111-111-1111"
+      },
+      "createdAt": "2026-01-01T00:00:00.000Z"
+    }
+  ],
+  "medicalrecords": [],
+  "consents": [],
+  "accesslogs": []
+}
