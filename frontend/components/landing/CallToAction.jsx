@@ -13,7 +13,7 @@ export function CallToAction() {
     };
 
     return (
-        <section id="get-started" className="border-t border-ink bg-ink py-20 text-paper">
+        <section id="get-started" className="border-t border-primary-100 bg-gradient-to-br from-primary-700 via-primary-600 to-primary-800 py-20 text-white">
             <motion.div
                 initial={{ opacity: 0, y: 14 }}
                 whileInView={{ opacity: 1, y: 0 }}
@@ -23,20 +23,20 @@ export function CallToAction() {
             >
                 <div className="grid gap-10 lg:grid-cols-[1fr_400px] lg:items-end">
                     <div>
-                        <h2 className="max-w-lg font-display text-4xl leading-[1.05] tracking-tight sm:text-5xl">
+                        <h2 className="max-w-lg font-display text-4xl leading-[1.05] tracking-tight text-white sm:text-5xl">
                             Five minutes now, for the day nobody plans for.
                         </h2>
-                        <p className="mt-5 max-w-md text-sm leading-relaxed text-paper/60">
+                        <p className="mt-5 max-w-md text-sm leading-relaxed text-blue-100">
                             Free for individuals, permanently. You only pay if a clinic or a
                             family needs shared management.
                         </p>
                     </div>
 
                     <form className="w-full" onSubmit={handleSubmit} aria-label="Get started">
-                        <label htmlFor="cta-email" className="font-mono text-[10px] uppercase tracking-[0.24em] text-paper/50">
+                        <label htmlFor="cta-email" className="font-mono text-[10px] uppercase tracking-[0.24em] text-blue-100">
                             Email address
                         </label>
-                        <div className="mt-2 flex border-b border-paper/40 focus-within:border-paper">
+                        <div className="mt-2 flex border-b border-white/40 focus-within:border-white">
                             <input
                                 id="cta-email"
                                 type="email"
@@ -44,13 +44,13 @@ export function CallToAction() {
                                 value={email}
                                 onChange={(e) => setEmail(e.target.value)}
                                 placeholder="you@email.com"
-                                className="w-full bg-transparent py-2.5 text-sm text-paper placeholder:text-paper/35 focus:outline-none"
+                                className="w-full bg-transparent py-2.5 text-sm text-white placeholder:text-blue-100/70 focus:outline-none"
                             />
-                            <button type="submit" className="shrink-0 px-3 text-sm font-medium text-paper transition-colors hover:text-alert">
+                            <button type="submit" className="shrink-0 px-3 text-sm font-medium text-white transition-colors hover:text-blue-200">
                                 Start →
                             </button>
                         </div>
-                        <p className="mt-3 text-[11px] text-paper/45">No card required. Delete your record at any time.</p>
+                        <p className="mt-3 text-[11px] text-blue-100/80">No card required. Delete your record at any time.</p>
                     </form>
                 </div>
             </motion.div>

@@ -65,18 +65,18 @@ export function Hero() {
                     animate="show"
                     className="mt-9 flex flex-wrap items-center gap-x-6 gap-y-3"
                 >
-                    <Link href="/register" className="bg-ink px-6 py-3 text-sm font-medium text-paper transition-colors hover:bg-alert">
+                    <Link href="/register" className="bg-primary-600 px-6 py-3 text-sm font-medium text-white shadow-soft transition-all hover:bg-primary-700 hover:shadow-card">
                         Set up my card — free
                     </Link>
                     <a
                         href="#how-it-works"
-                        className="border-b border-ink pb-0.5 text-sm text-ink transition-colors hover:border-alert hover:text-alert"
+                        className="border-b border-primary-200 pb-0.5 text-sm text-primary-700 transition-colors hover:border-primary-600 hover:text-primary-800"
                     >
                         How access works
                     </a>
                     <Link
                         href="/hospital/scan"
-                        className="inline-flex items-center gap-2 border-b border-ink-line pb-0.5 text-sm text-ink-700 transition-colors hover:border-alert hover:text-alert"
+                        className="inline-flex items-center gap-2 border-b border-primary-100 pb-0.5 text-sm text-ink-700 transition-colors hover:border-primary-600 hover:text-primary-700"
                     >
                         <CameraIcon className="h-4 w-4" />
                         I&apos;m a responder — scan a code

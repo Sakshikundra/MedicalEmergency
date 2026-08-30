@@ -21,7 +21,7 @@ export function Navbar() {
 
     return (
         <header
-            className={`fixed inset-x-0 top-0 z-50 border-b transition-colors duration-200 ${scrolled ? 'border-ink-line bg-paper/95 backdrop-blur-sm' : 'border-transparent'
+            className={`fixed inset-x-0 top-0 z-50 border-b transition-colors duration-200 ${scrolled ? 'border-primary-100 bg-white/90 backdrop-blur-sm' : 'border-transparent bg-transparent'
                 }`}
         >
             <nav aria-label="Main" className="mx-auto flex max-w-5xl items-center justify-between px-6 py-4">
@@ -37,7 +37,7 @@ export function Navbar() {
                         <li key={link.href}>
                             <a
                                 href={link.href}
-                                className="border-b border-transparent pb-0.5 text-sm text-ink-700 transition-colors hover:border-ink hover:text-ink"
+                                className="border-b border-transparent pb-0.5 text-sm text-ink-700 transition-colors hover:border-primary-600 hover:text-primary-700"
                             >
                                 {link.label}
                             </a>
@@ -46,7 +46,7 @@ export function Navbar() {
                     <li>
                         <Link
                             href="/login"
-                            className="border-b border-transparent pb-0.5 text-sm text-ink-700 transition-colors hover:border-ink hover:text-ink"
+                            className="border-b border-transparent pb-0.5 text-sm text-ink-700 transition-colors hover:border-primary-600 hover:text-primary-700"
                         >
                             Sign in
                         </Link>
@@ -54,7 +54,7 @@ export function Navbar() {
                     <li>
                         <Link
                             href="/register"
-                            className="border border-ink px-4 py-2 text-sm font-medium text-ink transition-colors hover:bg-ink hover:text-paper"
+                            className="border border-primary-200 bg-primary-50 px-4 py-2 text-sm font-medium text-primary-700 transition-colors hover:bg-primary-600 hover:text-white"
                         >
                             Set up my card
                         </Link>
